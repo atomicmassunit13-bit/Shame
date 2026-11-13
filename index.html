@@ -1,0 +1,988 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Reyhaneh ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --bg:#eff8f3;
+ --mint:#d4ecdf;
+ --blue:#d2eaf2;
+ --green:#75a995;
+ --dark:#315b51;
+ --text:#42675e;
+ --muted:#8ba69c;
+ --white:#fffefa;
+ --pink:#f3dce8;
+ --shadow:0 15px 45px #477c6918;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Vazirmatn,sans-serif;
+ background:var(--bg);
+ color:var(--dark);
+ overflow-x:hidden;
+}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+
+/* BACKGROUND */
+
+body:before{
+ content:"";
+ position:fixed;
+ inset:0;
+ pointer-events:none;
+ z-index:-1;
+ background:
+ radial-gradient(circle at 10% 10%,#c5e9d6 0,transparent 35%),
+ radial-gradient(circle at 90% 50%,#c9e7f2 0,transparent 38%),
+ radial-gradient(circle at 50% 100%,#f0dfe9 0,transparent 35%);
+}
+
+.particle{
+ position:fixed;
+ pointer-events:none;
+ color:#8dbda9;
+ opacity:.4;
+ animation:float 9s infinite ease-in-out;
+ z-index:-1;
+}
+@keyframes float{
+ 0%,100%{transform:translateY(0) rotate(0)}
+ 50%{transform:translateY(-35px) rotate(20deg)}
+}
+@keyframes appear{
+ from{opacity:0;transform:translateY(20px)}
+ to{opacity:1;transform:translateY(0)}
+}
+@keyframes glow{
+ 0%,100%{box-shadow:0 0 15px #a4d7c4}
+ 50%{box-shadow:0 0 35px #a4d7c4}
+}
+
+/* HEADER */
+
+header{
+ max-width:1200px;
+ margin:auto;
+ padding:22px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+.logo{
+ font-family:"Playfair Display",serif;
+ font-size:26px;
+ font-weight:600;
+ letter-spacing:2px;
+ color:#4d8573;
+}
+.logo span{color:#92c4b4}
+.nav{
+ display:flex;
+ gap:22px;
+ font-size:12px;
+ color:#648b7e;
+}
+.nav a:hover{color:#315b51}
+.header-btn{
+ border:1px solid #a9d3c0;
+ padding:10px 17px;
+ border-radius:30px;
+ background:#ffffff80;
+ color:#568776;
+ font-size:12px;
+}
+
+/* HERO */
+
+.hero{
+ max-width:1150px;
+ margin:35px auto 85px;
+ padding:25px;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:35px;
+ align-items:center;
+}
+.hero-text{text-align:right}
+.eyebrow{
+ color:#7eaf9d;
+ letter-spacing:4px;
+ font-size:11px;
+}
+.hero h1{
+ font-size:clamp(42px,7vw,75px);
+ line-height:1.35;
+ margin:20px 0;
+ color:#37665a;
+}
+.hero h1 span{
+ display:block;
+ color:#8abcb1;
+ font-family:"Playfair Display",serif;
+ font-style:italic;
+}
+.hero p{
+ color:#79978d;
+ font-size:14px;
+ line-height:2.2;
+ max-width:480px;
+}
+.hero-actions{
+ display:flex;
+ gap:12px;
+ flex-wrap:wrap;
+ margin-top:25px;
+}
+.primary{
+ border:0;
+ background:linear-gradient(110deg,#76ad96,#8bc5c3);
+ color:white;
+ padding:15px 25px;
+ border-radius:14px;
+ font-weight:700;
+ box-shadow:0 10px 25px #7db8a333;
+ transition:.3s;
+}
+.primary:hover{transform:translateY(-4px)}
+.secondary{
+ border:1px solid #b9dacc;
+ background:#ffffffaa;
+ color:#568776;
+ padding:14px 22px;
+ border-radius:14px;
+}
+.hero-art{
+ min-height:420px;
+ border-radius:35px;
+ position:relative;
+ overflow:hidden;
+ background:
+ linear-gradient(145deg,#c7e8d6cc,#d4e9f3cc),
+ url("https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1000") center/cover;
+ border:7px solid #ffffffa8;
+ box-shadow:var(--shadow);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+}
+.hero-art:before{
+ content:"";
+ position:absolute;
+ inset:0;
+ background:linear-gradient(0deg,#274f4544,transparent 70%);
+}
+.hero-art-inner{
+ position:relative;
+ text-align:center;
+ color:white;
+ text-shadow:0 2px 15px #345a50;
+}
+.hero-art-inner .cake{font-size:110px}
+.hero-art-inner h2{
+ font-family:"Playfair Display",serif;
+ font-size:40px;
+ margin:10px;
+}
+.hero-art-inner p{color:white}
+.floating-heart{
+ position:absolute;
+ font-size:27px;
+ animation:float 5s infinite;
+}
+
+/* SECTION */
+
+section{max-width:1100px;margin:0 auto 90px;padding:0 22px}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title small{
+ color:#83ad9f;
+ letter-spacing:4px;
+ font-size:10px;
+}
+.section-title h2{
+ font-size:30px;
+ margin:10px 0;
+ color:#39695c;
+}
+.section-title p{
+ font-size:13px;
+ color:#8ba69c;
+}
+
+/* MESSAGE */
+
+.birthday-note{
+ background:linear-gradient(125deg,#d4ecdf,#d8eaf3);
+ border:1px solid white;
+ border-radius:28px;
+ padding:38px;
+ text-align:center;
+ box-shadow:var(--shadow);
+ position:relative;
+ overflow:hidden;
+}
+.birthday-note h2{
+ font-family:"Playfair Display",serif;
+ font-size:35px;
+ color:#497e6c;
+}
+.birthday-note p{
+ line-height:2.5;
+ font-size:14px;
+ color:#57796e;
+ max-width:700px;
+ margin:20px auto;
+}
+.signature{
+ font-family:"Playfair Display",serif;
+ font-size:24px;
+ color:#79a999;
+}
+
+/* MOODS */
+
+.moods{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:18px;
+}
+.mood{
+ background:#ffffffc9;
+ padding:12px;
+ border:1px solid #d6e9df;
+ border-radius:22px;
+ box-shadow:var(--shadow);
+ transition:.3s;
+}
+.mood:hover{
+ transform:translateY(-6px);
+ border-color:#8fc3ad;
+}
+.mood.active{border:2px solid #76ad96}
+.mood-photo{
+ aspect-ratio:5/3;
+ border-radius:15px;
+ background:linear-gradient(135deg,#d4ecdf,#d4eaf2);
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ overflow:hidden;
+ position:relative;
+}
+.mood-photo img{width:100%;height:100%;object-fit:cover}
+.mood-placeholder{
+ text-align:center;
+ color:#729f8d;
+}
+.mood-placeholder b{display:block;font-size:35px}
+.mood-placeholder small{font-size:10px}
+.upload{
+ display:block;
+ padding:9px;
+ background:#eaf5ed;
+ color:#628f7c;
+ text-align:center;
+ border-radius:10px;
+ font-size:11px;
+ margin-top:9px;
+ cursor:pointer;
+}
+.upload input{display:none}
+.mood-info{
+ display:flex;
+ gap:10px;
+ align-items:center;
+ padding:12px 4px 4px;
+}
+.mood-info span{font-size:24px}
+.mood-info h3{font-size:15px;margin:0}
+.mood-info p{font-size:10px;color:#93aaa0;margin:3px 0 0}
+
+/* MOOD MESSAGE */
+
+.mood-message{
+ display:none;
+ margin-top:25px;
+ padding:30px;
+ background:linear-gradient(120deg,#d8eee2,#d9eaf3);
+ border-radius:22px;
+ animation:appear .4s;
+}
+.mood-message.show{display:block}
+.mood-message small{letter-spacing:3px;color:#7cae9b}
+.mood-message h3{font-size:23px}
+.mood-message p{line-height:2.2;color:#628277;font-size:14px}
+
+/* DIARY */
+
+.diary-cover{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ flex-wrap:wrap;
+ gap:20px;
+ padding:35px;
+ background:linear-gradient(120deg,#cce9d8,#cce6f1);
+ border-radius:28px;
+ box-shadow:var(--shadow);
+}
+.diary-cover h2{font-size:30px;margin:0 0 10px}
+.diary-cover p{color:#698e81;font-size:13px}
+.diary-icon{font-size:75px}
+.diary{
+ display:none;
+ margin-top:22px;
+ background:#fffefa;
+ border-radius:25px;
+ padding:28px;
+ box-shadow:var(--shadow);
+}
+.diary.open{display:block;animation:appear .4s}
+.diary-top{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin-bottom:25px;
+}
+.field{margin-bottom:20px}
+.field label{
+ display:block;
+ font-size:12px;
+ color:#688d80;
+ margin-bottom:9px;
+}
+.field input,.field textarea,.field select{
+ width:100%;
+ padding:14px;
+ border:1px solid #d6e9df;
+ border-radius:12px;
+ background:#f6fbf7;
+ color:#345b51;
+ outline:none;
+}
+.field textarea{
+ min-height:150px;
+ resize:vertical;
+ line-height:2.2;
+}
+.field input:focus,.field textarea:focus{
+ border-color:#83bca6;
+}
+.image-upload{
+ padding:25px;
+ border:2px dashed #b8daca;
+ background:#f5faf6;
+ text-align:center;
+ border-radius:16px;
+}
+.image-upload label{cursor:pointer;color:#548e78}
+.image-upload input{display:none}
+.preview{
+ display:flex;
+ gap:10px;
+ flex-wrap:wrap;
+ margin-top:15px;
+}
+.preview-item{position:relative}
+.preview img{
+ width:90px;height:90px;object-fit:cover;border-radius:12px;
+}
+.preview button{
+ position:absolute;top:3px;right:3px;
+ border:0;border-radius:50%;background:white;color:#b44;
+ width:23px;height:23px;
+}
+.form-actions{display:flex;gap:10px;flex-wrap:wrap}
+
+/* MEMORIES */
+
+.memories{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:16px;
+}
+.memory{
+ padding:20px;
+ border:1px solid #d8eae0;
+ border-radius:19px;
+ background:#ffffffdd;
+ box-shadow:var(--shadow);
+}
+.memory-top{
+ display:flex;
+ justify-content:space-between;
+ font-size:11px;
+ color:#83a497;
+}
+.memory h3{font-size:17px}
+.memory p{
+ white-space:pre-wrap;
+ overflow-wrap:anywhere;
+ line-height:2;
+ font-size:13px;
+ color:#658478;
+}
+.memory-images{display:flex;flex-wrap:wrap;gap:8px}
+.memory-images img{
+ width:calc(50% - 4px);
+ max-height:180px;
+ object-fit:cover;
+ border-radius:12px;
+}
+.memory-actions{display:flex;gap:8px;margin-top:15px}
+.memory-actions button{
+ border:0;
+ border-radius:9px;
+ padding:8px 13px;
+ background:#eaf4ed;
+ color:#628a7a;
+ font-size:11px;
+}
+.empty{
+ grid-column:1/-1;
+ text-align:center;
+ padding:35px;
+ border:1px dashed #bdd9cb;
+ border-radius:18px;
+ color:#8ba89a;
+}
+
+/* FOOTER */
+
+footer{
+ padding:55px 20px;
+ text-align:center;
+ background:#dcefe5;
+ color:#71998a;
+}
+footer h2{
+ font-family:"Playfair Display",serif;
+ font-size:28px;
+}
+footer p{font-size:11px;letter-spacing:2px}
+
+#toast{
+ position:fixed;
+ bottom:20px;
+ left:50%;
+ transform:translate(-50%,100px);
+ background:#477e6c;
+ color:white;
+ padding:13px 22px;
+ border-radius:12px;
+ font-size:12px;
+ transition:.3s;
+ z-index:20;
+}
+#toast.show{transform:translate(-50%,0)}
+
+@media(max-width:700px){
+ .nav{display:none}
+ .hero{grid-template-columns:1fr;margin-top:10px}
+ .hero-art{min-height:320px}
+ .moods{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .mood{padding:9px}
+ .mood-info h3{font-size:13px}
+ .mood-info p{font-size:9px}
+ .birthday-note{padding:25px}
+ .diary{padding:18px}
+ .memories{grid-template-columns:1fr}
+ .hero h1{font-size:48px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="particle" style="top:15%;left:8%">✦</div>
+<div class="particle" style="top:35%;right:7%;animation-delay:2s">♡</div>
+<div class="particle" style="top:70%;left:13%;animation-delay:4s">✿</div>
+<div class="particle" style="top:80%;right:12%;animation-delay:1s">✧</div>
+
+<header>
+ <div class="logo">REYHANEH <span>♡</span></div>
+ <nav class="nav">
+  <a href="#home">Home</a>
+  <a href="#birthday">Birthday</a>
+  <a href="#feelings">Feelings</a>
+  <a href="#diary">My Diary</a>
+ </nav>
+ <a href="#birthday" class="header-btn">Happy Birthday ♡</a>
+</header>
+
+<main id="home">
+
+<div class="hero">
+ <div class="hero-text">
+  <div class="eyebrow">A SPECIAL DAY FOR SOMEONE SPECIAL</div>
+  <h1>Happy Birthday <span>Reyhaneh ♡</span></h1>
+  <p>
+   امروز روز توئه.
+   روز کسی که دنیا با بودنش می‌تونه کمی قشنگ‌تر باشه.
+   امیدوارم تمام روزهای پیش روت پر از اتفاق‌های دوست‌داشتنی باشن.
+  </p>
+  <div class="hero-actions">
+   <a class="primary" href="#birthday">Discover your day ✦</a>
+   <a class="secondary" href="#diary">Open your diary</a>
+  </div>
+ </div>
+
+ <div class="hero-art">
+  <span class="floating-heart" style="top:15%;right:15%">♡</span>
+  <span class="floating-heart" style="bottom:20%;left:15%">✧</span>
+  <div class="hero-art-inner">
+   <div class="cake">🎂</div>
+   <h2>For Reyhaneh</h2>
+   <p>A day full of magic ♡</p>
+  </div>
+ </div>
+</div>
+
+<section id="birthday">
+ <div class="section-title">
+  <small>JUST FOR YOU</small>
+  <h2>یک روز برای تو، ریحانه عزیزم</h2>
+  <p>A little letter from the heart.</p>
+ </div>
+
+ <div class="birthday-note">
+  <div style="font-size:38px">🌷 🦋 🌿</div>
+  <h2>Dear Reyhaneh...</h2>
+  <p>
+   تولدت مبارک ریحانه عزیزم! ♡
+   امیدوارم سال جدید زندگیت پر از لبخندهای واقعی،
+   آدم‌های خوب، تجربه‌های تازه و آرزوهایی باشه که یکی‌یکی به حقیقت تبدیل می‌شن.
+   امیدوارم هیچ‌وقت شوق زندگی کردن و دنبال کردن رویا‌هات رو از دست ندی.
+   تو لایق بهترین اتفاق‌هایی.
+   <br>
+   <strong>May your life always bloom beautifully.</strong>
+  </p>
+  <div class="signature">With love ♡</div>
+ </div>
+</section>
+
+<section id="feelings">
+ <div class="section-title">
+  <small>YOUR LITTLE WORLD</small>
+  <h2>دنیای احساسات تو</h2>
+  <p>برای هر احساس یک عکس انتخاب کن و حال و هوای خودت رو بساز.</p>
+ </div>
+
+ <div class="moods" id="moods"></div>
+
+ <div class="mood-message" id="moodMessage">
+  <small>A MESSAGE FOR YOU ✦</small>
+  <h3 id="moodTitle"></h3>
+  <p id="moodText"></p>
+ </div>
+</section>
+
+<section id="diary">
+ <div class="section-title">
+  <small>YOUR MEMORIES</small>
+  <h2>دفتر خاطرات ریحانه 📔</h2>
+  <p>اینجا می‌تونی هر چیزی رو که دوست داری برای خودت نگه داری.</p>
+ </div>
+
+ <div class="diary-cover">
+  <div>
+   <h2>Dear Diary. ♡</h2>
+   <p>عکس‌ها، نوشته‌ها و لحظه‌هایی که ارزش موندن دارن.</p>
+   <button class="primary" id="openDiary">OPEN YOUR DIARY ✦</button>
+  </div>
+  <div class="diary-icon">📖</div>
+ </div>
+
+ <div class="diary" id="diaryForm">
+  <div class="diary-top">
+   <h3>✧ یک خاطره جدید</h3>
+   <button class="secondary" id="closeDiary">بستن ×</button>
+  </div>
+
+  <div class="field">
+   <label>عنوان خاطره</label>
+   <input id="entryTitle" placeholder="امروز چه اتفاقی افتاد؟">
+  </div>
+
+  <div class="field">
+   <label>تاریخ</label>
+   <input type="date" id="entryDate">
+  </div>
+
+  <div class="field">
+   <label>حس امروز</label>
+   <select id="entryMood"></select>
+  </div>
+
+  <div class="field">
+   <label>داستان امروزت</label>
+   <textarea id="entryContent" placeholder="امروز می‌خوام اینجا بنویسم..."></textarea>
+  </div>
+
+  <div class="field">
+   <label>عکس‌های خاطره</label>
+   <div class="image-upload">
+    <label for="entryImages">📷 انتخاب عکس از گالری</label>
+    <input type="file" id="entryImages" accept="image/*" multiple>
+    <div class="preview" id="preview"></div>
+   </div>
+  </div>
+
+  <div class="form-actions">
+   <button class="primary" id="saveEntry">SAVE MEMORY ♡</button>
+   <button class="secondary" id="cancelEdit" hidden>لغو ویرایش</button>
+  </div>
+ </div>
+
+ <div style="margin-top:45px">
+  <div class="section-title">
+   <small>THE LITTLE THINGS</small>
+   <h2>خاطرات ثبت‌شده</h2>
+  </div>
+  <div class="memories" id="memories">
+   <div class="empty">در حال آماده‌سازی دفتر خاطرات...</div>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <h2>Stay Beautiful, Reyhaneh ♡</h2>
+ <p>MADE WITH LOVE · JUST FOR YOU</p>
+ <div style="font-size:23px;margin-top:15px">🌿 🦋 🌷</div>
+</footer>
+
+<div id="toast"></div>
+
+<script>
+const moods=[
+ {id:"happy",name:"خوشحالی",icon:"☀️",desc:"A little sunshine",
+ title:"همیشه بخند ☀️",text:"امیدوارم همیشه دلیل‌های زیادی برای خندیدن داشته باشی. لحظه‌های قشنگت رو ثبت کن تا بعدها با دیدنشون دوباره لبخند بزنی."},
+ {id:"sad",name:"ناراحتی",icon:"🌧️",desc:"It's okay to feel",
+ title:"با خودت مهربون باش 🌧️",text:"همه روزها قرار نیست عالی باشن. به خودت فرصت بده و بدون که یک روز سخت، تمام داستان زندگی تو نیست."},
+ {id:"calm",name:"آرامش",icon:"🌿",desc:"Peaceful moments",
+ title:"آرامش سهم تو باشه 🌿",text:"امیدوارم زندگی همیشه لحظه‌هایی از سکوت، آرامش و حال خوب بهت هدیه بده. از این لحظه‌های کوچک لذت ببر."},
+ {id:"angry",name:"عصبانیت",icon:"🔥",desc:"Take a breath",
+ title:"کمی مکث کن 🔥",text:"وقتی روز سختی داری، به خودت زمان بده. احساساتت رو بشناس و با آرامش بیشتری به اتفاق‌ها نگاه کن."},
+ {id:"lonely",name:"تنهایی",icon:"🌙",desc:"Your own universe",
+ title:"خودت رو دوست داشته باش 🌙",text:"گاهی تنها بودن فرصتی برای شناختن خودمونه. یادت نره تو شایسته ارتباط‌های خوب و لحظه‌های قشنگی."},
+ {id:"excited",name:"هیجان",icon:"✨",desc:"Beautiful beginnings",
+ title:"به سمت رویا‌هات برو ✨",text:"امیدوارم همیشه برای اتفاق‌های جدید هیجان داشته باشی و از تجربه کردن دنیا نترسی."}
+];
+
+const DB_NAME="ReyhanehBirthdayDB";
+let db;
+let moodPhotos={};
+let entryPhotos=[];
+let editingId=null;
+const $=id=>document.getElementById(id);
+
+function notify(text){
+ $("toast").textContent=text;
+ $("toast").classList.add("show");
+ clearTimeout(notify.timer);
+ notify.timer=setTimeout(()=>$("toast").classList.remove("show"),2500);
+}
+
+function localDate(){
+ const d=new Date();
+ return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+}
+$("entryDate").value=localDate();
+
+function openDB(){
+ return new Promise((resolve,reject)=>{
+  const r=indexedDB.open(DB_NAME,1);
+  r.onupgradeneeded=e=>{
+   const d=e.target.result;
+   if(!d.objectStoreNames.contains("memories"))
+    d.createObjectStore("memories",{keyPath:"id",autoIncrement:true});
+   if(!d.objectStoreNames.contains("settings"))
+    d.createObjectStore("settings",{keyPath:"key"});
+  };
+  r.onsuccess=()=>resolve(r.result);
+  r.onerror=()=>reject(r.error);
+ });
+}
+
+function req(r){
+ return new Promise((resolve,reject)=>{
+  r.onsuccess=()=>resolve(r.result);
+  r.onerror=()=>reject(r.error);
+ });
+}
+function store(name,mode="readonly"){
+ return db.transaction(name,mode).objectStore(name);
+}
+
+function compress(file){
+ return new Promise((resolve,reject)=>{
+  const reader=new FileReader();
+  reader.onload=()=>{
+   const img=new Image();
+   img.onload=()=>{
+    const scale=Math.min(1,1200/Math.max(img.width,img.height));
+    const canvas=document.createElement("canvas");
+    canvas.width=Math.round(img.width*scale);
+    canvas.height=Math.round(img.height*scale);
+    canvas.getContext("2d").drawImage(img,0,0,canvas.width,canvas.height);
+    resolve(canvas.toDataURL("image/jpeg",.78));
+   };
+   img.onerror=reject;
+   img.src=reader.result;
+  };
+  reader.onerror=reject;
+  reader.readAsDataURL(file);
+ });
+}
+
+// MOOD CARDS
+
+function renderMoods(){
+ $("moods").innerHTML="";
+ $("entryMood").innerHTML="";
+
+ moods.forEach(m=>{
+  const card=document.createElement("article");
+  card.className="mood";
+  const photo=document.createElement("div");
+  photo.className="mood-photo";
+
+  if(moodPhotos[m.id]){
+   const img=document.createElement("img");
+   img.src=moodPhotos[m.id];
+   photo.append(img);
+  }else{
+   const placeholder=document.createElement("div");
+   placeholder.className="mood-placeholder";
+   placeholder.innerHTML=`<b>${m.icon}</b><small>عکس این احساس</small>`;
+   photo.append(placeholder);
+  }
+
+  const upload=document.createElement("label");
+  upload.className="upload";
+  upload.textContent="＋ انتخاب عکس";
+  const input=document.createElement("input");
+  input.type="file";
+  input.accept="image/*";
+  input.onchange=async()=>{
+   const file=input.files[0];
+   if(!file)return;
+   if(file.size>8*1024*1024)return notify("حجم عکس کمتر از ۸ مگابایت باشه");
+   try{
+    moodPhotos[m.id]=await compress(file);
+    await req(store("settings","readwrite").put({
+     key:"moodPhotos",value:moodPhotos
+    }));
+    renderMoods();
+    notify("عکس با موفقیت ذخیره شد ♡");
+   }catch(e){notify("ذخیره عکس ناموفق بود");}
+  };
+  upload.append(input);
+
+  const info=document.createElement("div");
+  info.className="mood-info";
+  info.innerHTML=`<span>${m.icon}</span><div><h3>${m.name}</h3><p>${m.desc}</p></div>`;
+
+  card.append(photo,upload,info);
+  card.onclick=()=>selectMood(m.id,card);
+  upload.onclick=e=>e.stopPropagation();
+  $("moods").append(card);
+
+  const option=document.createElement("option");
+  option.value=m.id;
+  option.textContent=m.icon+" "+m.name;
+  $("entryMood").append(option);
+ });
+}
+
+function selectMood(id,card){
+ document.querySelectorAll(".mood").forEach(c=>c.classList.remove("active"));
+ card.classList.add("active");
+ const m=moods.find(x=>x.id===id);
+ $("moodTitle").textContent=m.title;
+ $("moodText").textContent=m.text;
+ $("moodMessage").classList.add("show");
+ $("entryMood").value=id;
+ $("moodMessage").scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+// DIARY
+
+$("openDiary").onclick=()=>{
+ $("diaryForm").classList.add("open");
+ $("diaryForm").scrollIntoView({behavior:"smooth"});
+};
+$("closeDiary").onclick=()=>$("diaryForm").classList.remove("open");
+
+$("entryImages").onchange=async e=>{
+ for(const file of e.target.files){
+  if(!file.type.startsWith("image/"))continue;
+  if(file.size>8*1024*1024){notify("عکس باید کمتر از ۸ مگابایت باشه");continue;}
+  if(entryPhotos.length>=6){notify("حداکثر ۶ عکس");break;}
+  try{entryPhotos.push(await compress(file));}
+  catch(err){notify("خواندن عکس ناموفق بود");}
+ }
+ renderPreview();
+ e.target.value="";
+};
+
+function renderPreview(){
+ $("preview").innerHTML="";
+ entryPhotos.forEach((src,index)=>{
+  const wrap=document.createElement("div");
+  wrap.className="preview-item";
+  const img=document.createElement("img");
+  img.src=src;
+  const remove=document.createElement("button");
+  remove.textContent="×";
+  remove.onclick=()=>{
+   entryPhotos.splice(index,1);
+   renderPreview();
+  };
+  wrap.append(img,remove);
+  $("preview").append(wrap);
+ });
+}
+
+$("saveEntry").onclick=async()=>{
+ const title=$("entryTitle").value.trim();
+ const content=$("entryContent").value.trim();
+ const date=$("entryDate").value;
+ if(!title||!content||!date)return notify("عنوان، تاریخ و متن رو وارد کن");
+
+ const data={
+  title,content,date,
+  mood:$("entryMood").value,
+  photos:[...entryPhotos],
+  updatedAt:Date.now()
+ };
+
+ try{
+  const r=editingId
+   ?store("memories","readwrite").put({...data,id:editingId})
+   :store("memories","readwrite").add(data);
+  await req(r);
+  notify("خاطره ذخیره شد ♡");
+  resetForm();
+  await renderMemories();
+ }catch(e){
+  console.error(e);
+  notify("ذخیره ناموفق بود؛ فضای مرورگر رو بررسی کن");
+ }
+};
+
+function resetForm(){
+ editingId=null;
+ entryPhotos=[];
+ $("entryTitle").value="";
+ $("entryContent").value="";
+ $("entryDate").value=localDate();
+ $("preview").innerHTML="";
+ $("saveEntry").textContent="SAVE MEMORY ♡";
+ $("cancelEdit").hidden=true;
+}
+$("cancelEdit").onclick=resetForm;
+
+// MEMORIES
+
+async function renderMemories(){
+ const entries=await req(store("memories").getAll());
+ entries.sort((a,b)=>b.id-a.id);
+ $("memories").innerHTML="";
+
+ if(!entries.length){
+  $("memories").innerHTML='<div class="empty">هنوز خاطره‌ای ثبت نشده. اولین خاطره رو بساز ♡</div>';
+  return;
+ }
+
+ entries.forEach(entry=>{
+  const mood=moods.find(m=>m.id===entry.mood);
+  const card=document.createElement("article");
+  card.className="memory";
+
+  const top=document.createElement("div");
+  top.className="memory-top";
+  top.textContent=(mood?mood.icon+" "+mood.name:"♡")+" | "+entry.date;
+
+  const title=document.createElement("h3");
+  title.textContent=entry.title;
+  const content=document.createElement("p");
+  content.textContent=entry.content;
+
+  const photos=document.createElement("div");
+  photos.className="memory-images";
+  (entry.photos||[]).forEach(src=>{
+   const img=document.createElement("img");
+   img.src=src;
+   img.loading="lazy";
+   photos.append(img);
+  });
+
+  const actions=document.createElement("div");
+  actions.className="memory-actions";
+
+  const edit=document.createElement("button");
+  edit.textContent="ویرایش ✎";
+  edit.onclick=()=>editEntry(entry);
+
+  const del=document.createElement("button");
+  del.textContent="حذف";
+  del.onclick=async()=>{
+   if(!confirm("این خاطره حذف بشه؟"))return;
+   await req(store("memories","readwrite").delete(entry.id));
+   notify("خاطره حذف شد");
+   renderMemories();
+  };
+
+  actions.append(edit,del);
+  card.append(top,title,content,photos,actions);
+  $("memories").append(card);
+ });
+}
+
+function editEntry(entry){
+ editingId=entry.id;
+ $("entryTitle").value=entry.title;
+ $("entryContent").value=entry.content;
+ $("entryDate").value=entry.date;
+ $("entryMood").value=entry.mood;
+ entryPhotos=[...(entry.photos||[])];
+ renderPreview();
+ $("saveEntry").textContent="UPDATE MEMORY ♡";
+ $("cancelEdit").hidden=false;
+ $("diaryForm").classList.add("open");
+ $("diaryForm").scrollIntoView({behavior:"smooth"});
+}
+
+// START
+
+async function start(){
+ try{
+  db=await openDB();
+  const saved=await req(store("settings").get("moodPhotos"));
+  if(saved)moodPhotos=saved.value||{};
+  renderMoods();
+  await renderMemories();
+ }catch(e){
+  console.error(e);
+  $("memories").innerHTML='<div class="empty">ذخیره‌سازی مرورگر در دسترس نیست.</div>';
+ }
+}
+start();
+</script>
+
+</body>
+</html>
